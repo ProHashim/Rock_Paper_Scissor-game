@@ -12,23 +12,23 @@ user_1_answer = input('what do you want to choose {}? '.format(user_1)).upper()
 user_2_answer = input('%s, What do you want to  choose?' % user_2).upper()
 
 
-def compare(u1, u2):
-    if u1 == u2:
+def compare(user_one, user_two):
+    if user_one == user_two:
         return('it is tie!')
-    elif u1 == 'ROCK':
-        if u2 == 'PAPER':
+    elif user_one == 'ROCK':
+        if user_two == 'PAPER':
             return ('Rock wins')
         else:
             return ('paper wins')
-    elif u1 == 'SCISSORS':
-        if u2 == 'PAPER':
+    elif user_one == 'SCISSORS':
+        if user_two == 'PAPER':
             return('Scissors win')
         else:
             return('Rock wins')
 
     
-    elif u1 == 'PAPER':
-        if u2 == 'ROCK':
+    elif user_one == 'PAPER':
+        if user_two == 'ROCK':
             return('Paper wins! ')
         else:
             return('Scissors wins! ')
